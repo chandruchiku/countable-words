@@ -47,7 +47,7 @@ writable.on('finish', function () {
         finalOutput = await getDictionaryData(finalWordsArray.slice(0, 10));
 
         console.log("Final output with meanings for top 10 words");
-        console.log('Final Output :', finalOutput);
+        console.log('Final Output :', JSON.stringify(finalOutput));
     });
 });
 
